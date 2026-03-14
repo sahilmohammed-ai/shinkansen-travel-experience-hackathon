@@ -1,4 +1,4 @@
-# Shinkansen Passenger Experience Prediction — Hackathon Report
+# Shinkansen Passenger Experience Prediction: Hackathon Report
 
 **Competition Dates:** Oct 1, 11:00 PM – Oct 5, 11:00 PM
 
