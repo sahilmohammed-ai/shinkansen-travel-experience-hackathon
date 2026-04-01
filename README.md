@@ -27,32 +27,6 @@ The goal was to predict passenger satisfaction on unseen test data.
 
 The objective was to identify which features most influence passengers’ overall experience and to develop a predictive model with high generalization performance.
 
-**Target Variable:**
-
-* `Overall_Experience`
-
-  * `1` → Satisfied
-  * `0` → Not Satisfied
-
-**Evaluation Metric:**
-
-* Accuracy: the proportion of correct predictions over total observations.
-
----
-
-## Approach
-
-I chose to work individually instead of forming a team. My approach focused entirely on **CatBoost**, which proved to be extremely effective and simple to use.
-
-### Why CatBoost?
-
-* Natively handles categorical features; no need for encoding.
-* Automatically manages missing values; no need for manual imputation.
-* Robust to outliers.
-* Minimal preprocessing required while maintaining strong accuracy.
-
-CatBoost consistently delivered the best results on both training and unseen test data compared to other models I tried, including LightGBM and XGBoost.
-
 ---
 
 ## Final Model Configuration
@@ -71,26 +45,12 @@ The CatBoost model that produced the best results had the following parameters:
 
 ---
 
-## Dataset Summary
-
-The datasets included:
-
-* Passenger demographics and travel history
-* Train performance metrics and delay information
-* Survey feedback on multiple service parameters
-* Overall experience labels as the target variable
-
-Both training and test datasets were collected simultaneously from the same population, ensuring consistency.
-
----
-
 ## Results
 
 | Metric                      | Value               |
 | --------------------------- | ------------------- |
 | Accuracy on training data   | 95.979%             |
 | Accuracy on test submission | 95.84855%           |
-| Leaderboard placement       | 4th out of 37 teams |
 
 ---
 
